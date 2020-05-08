@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:gravity="center_horizontal"
+  android:orientation="vertical"
+  tools:context=".MainActivity">
+
+
+  <!--增-->
+  <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="增加" />
+
+  <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <Button
+      android:id="@+id/insert_one"
+      android:layout_width="100dp"
+      android:layout_height="wrap_content"
+      android:text="新增一个" />
+
+    <Button
+      android:id="@+id/insert_list"
+      android:layout_width="100dp"
+      android:layout_height="wrap_content"
+      android:text="新增一组" />
+  </LinearLayout>
+
+  <!--删-->
+  <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="删除" />
+
+  <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <Button
+      android:id="@+id/delete_entity"
+      android:layout_width="100dp"
+      android:layout_height="wrap_content"
+      android:text="删除entity"
+      android:textAllCaps="false" />
+
+    <Button
+      android:id="@+id/delete_by_id"
+      android:layout_width="100dp"
+      android:layout_height="wrap_content"
+      android:text="删除(by id)"
+      android:textAllCaps="false" />
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <Button
+      android:id="@+id/delete_list"
+      android:layout_width="100dp"
+      android:layout_height="wrap_content"
+      android:text="删除多个"
+      android:textAllCaps="false" />
+
+    <Button
+      android:id="@+id/delete_all"
+      android:layout_width="100dp"
+      android:layout_height="wrap_content"
+      android:text="删除全部"
+      android:textAllCaps="false" />
+  </LinearLayout>
+
+
+  <!--改-->
+  <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="修改" />
+
+  <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <Button
+      android:id="@+id/update_entity"
+      android:layout_width="100dp"
+      android:layout_height="wrap_content"
+      android:text="更新(整体)"
+      android:textAllCaps="false" />
+
+    <Button
+      android:id="@+id/update_by_id"
+      android:layout_width="100dp"
+      android:layout_height="wrap_content"
+      android:text="更新(by id)"
+      android:textAllCaps="false" />
+  </LinearLayout>
+
+
+  <!--查-->
+  <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="查询" />
+
+  <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <Button
+      android:id="@+id/query_by_id"
+      android:layout_width="100dp"
+      android:layout_height="wrap_content"
+      android:text="查询entity"
+      android:textAllCaps="false" />
+
+    <Button
+      android:id="@+id/query_all"
+      android:layout_width="100dp"
+      android:layout_height="wrap_content"
+      android:text="查询全部"
+      android:textAllCaps="false" />
+
+  </LinearLayout>
+
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dp_10">
+
+    <TextView
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:gravity="center"
+      android:text="用户id" />
+
+    <TextView
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:gravity="center"
+      android:text="用户姓名" />
+
+    <TextView
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:gravity="center"
+      android:text="用户年龄" />
+
+    <TextView
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:gravity="center"
+      android:text="用户性别" />
+
+  </LinearLayout>
+
+  <androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/main_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/dp_10"
+    android:background="#ffffff"/>
+
+
+</LinearLayout>
